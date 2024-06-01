@@ -1,5 +1,39 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-dimchansky-utfbom (1.1.1-1) unstable; urgency=medium
 
-  * Initial release
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+    Fixes: lintian: package-uses-old-debhelper-compat-version
+    See-also: https://lintian.debian.org/tags/package-uses-old-debhelper-compat-version.html
+  * Set debhelper-compat version in Build-Depends.
+    Fixes: lintian: uses-debhelper-compat-file
+    See-also: https://lintian.debian.org/tags/uses-debhelper-compat-file.html
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+    Fixes: lintian: upstream-metadata-file-is-missing
+    See-also: https://lintian.debian.org/tags/upstream-metadata-file-is-missing.html
+  * Apply multi-arch hints. + golang-github-dimchansky-utfbom-dev: Add Multi-Arch: foreign.
+    Changes-By: lintian-brush
+
+  [ Dr. Tobias Quathamer ]
+  * New upstream version 1.1.1
+  * Add upstream metadata
+  * Update d/gbp.conf for DEP-14
+  * Update d/gitlab-ci.yml
+  * Add --builddirectory=_build to d/rules
+  * Update d/watch to version 4
+  * Update d/copyright
+  * Switch section to golang from devel
+  * Use debhelper v13
+  * Update to Standards-Version 4.5.1
+  * Update go team e-mail address
+  * Add Rules-Requires-Root: no
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Sat, 02 Jan 2021 14:11:15 +0100
+
+golang-github-dimchansky-utfbom (0.0~git20170328.6c6132f-1) unstable; urgency=medium
+
+  * Initial release (Closes: #893777)
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Thu, 22 Mar 2018 10:44:35 +0100
